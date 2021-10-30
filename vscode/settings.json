@@ -1,30 +1,52 @@
 {
   "python.formatting.provider": "black",
-  "terminal.integrated.fontFamily": "'FiraCode Nerd Font',' Hack Nerd Font', Menlo, monospaced",
-  "editor.fontSize": 12,
+  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Hack Nerd Font', Menlo, monospace",
+  "editor.fontFamily": "'MesloLGS NF', 'Hack Nerd Font', Menlo, monospace",
+  "editor.inlayHints.fontFamily": "'MesloLGS NF', 'Hack Nerd Font', Menlo, monospace",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "editor.fontLigatures": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
     "editor.formatOnSave": false
   },
-  "explorer.confirmDragAndDrop": false,
-  "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.colorTheme": "Community Material Theme Darker",
-  "editor.formatOnSave": true,
-  "gitlens.mode.active": "zen",
-  "python.languageServer": "Pylance",
-  "terminal.integrated.fontSize": 12,
-  "liveServer.settings.donotShowInfoMsg": true,
+  "[rust]": {
+    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
+  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.formatOnSave": false
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[rmd]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.wordBasedSuggestions": false,
+    "editor.snippetSuggestions": "top"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+  "editor.formatOnSave": true,
+  "gitlens.mode.active": "zen",
+  "python.languageServer": "Pylance",
+  "liveServer.settings.donotShowInfoMsg": true,
   "terminal.integrated.inheritEnv": false,
   "jupyter.askForKernelRestart": false,
-  "tabnine.experimentalAutoImports": true,
   "r.rterm.mac": "/usr/local/bin/radian", //Use this only for a Mac
-  //"r.rpath.mac": "/usr/local/bin/R",
   "r.rterm.linux": "/home/vagrant/.local/bin/radian",
   "r.rpath.linux": "/usr/bin/R",
   "r.lsp.debug": false,
@@ -42,9 +64,6 @@
   "r.bracketedPaste": true,
   "r.alwaysUseActiveTerminal": false,
   "r.sessionWatcher": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "actionButtons": {
     "defaultColor": "#ff0034", // Can also use string color names.
     "loadNpmCommands": false, // Disables automatic generation of actions for npm commands.
@@ -58,9 +77,6 @@
         "command": "echo \"rmarkdown::render('${file}', 'pdf_document')\" | R --slave", // This is executed in the terminal.
       }
     ]
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "gitlens.menus": {
     "editor": false,
@@ -85,12 +101,8 @@
       "stash": true
     }
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "terminal.integrated.automationShell.osx": "/bin/zsh",
   "git.autofetch": true,
-  "editor.fontFamily": "'FuraCode Nerd Font', Menlo, Monaco,  monospace",
   "liveServer.settings.root": "dev_build/scatter_widget",
   "files.defaultLanguage": "${activeEditorLanguage}",
   "editor.linkedEditing": true,
@@ -100,18 +112,12 @@
     "wasm"
   ],
   "cSpell.enabled": false,
-  "editor.inlayHints.fontFamily": "'FuraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "[rust]": {
-    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
-  },
   "security.workspace.trust.untrustedFiles": "open",
   "rust-analyzer.inlayHints.enable": false,
-  "window.zoomLevel": 1,
   "explorer.confirmDelete": false,
   "zenMode.hideTabs": false,
 }
