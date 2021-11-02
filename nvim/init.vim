@@ -38,6 +38,12 @@ set relativenumber number
 set autowrite
 set mouse=a
 
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 let g:ale_fix_of_save = 1
 
 syntax on

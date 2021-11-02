@@ -70,6 +70,6 @@ vivim()
 }
 
 # Setting fd as the default source for fzf
-export FZF_DEFAULT_COMMAND='fd --type f --hidden'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --no-ignore-vcs'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
