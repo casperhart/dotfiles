@@ -20,7 +20,8 @@ require'nvim-treesitter.configs'.setup {
     "scss",
     "rust",
     "r",
-    "typescript"
+    "typescript",
+    "javascript"
   },
 }
 
