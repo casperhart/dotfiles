@@ -1,10 +1,9 @@
-nnoremap <silent> <C-p> :Telescope find_files<CR>
-nnoremap <silent> <C-f> :Telescope live_grep<CR>
-nnoremap <silent> <C-o> :Telescope buffers<CR>
-nnoremap <silent> <C-i> :Telescope help_tags<CR> 
-
-lua <<EOF
+local builtin = require('telescope.builtin')
 local actions = require('telescope.actions')
+
+vim.keymap.set('n', '<leader>p', builtin.find_files, {})
+vim.keymap.set('n', '<leader>f', builtin.live_grep, {})
+--vim.keymap.set('n', '<C-P>', builtin.git_files, {})
 
 require('telescope').setup {
   defaults = {
@@ -20,5 +19,3 @@ require('telescope').setup {
       }
     }
   }
-EOF
-
