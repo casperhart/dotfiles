@@ -16,14 +16,14 @@
     "editor.defaultFormatter": "statiolake.vscode-rustfmt"
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -35,11 +35,12 @@
       "strings": true
     },
     "editor.wordBasedSuggestions": false,
-    "editor.snippetSuggestions": "top"
+    "editor.snippetSuggestions": "top",
+    "editor.wordWrap": "on"
   },
   "explorer.confirmDragAndDrop": false,
   "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Catppuccin Macchiato",
   "editor.formatOnSave": true,
   "gitlens.mode.active": "zen",
   "python.languageServer": "Pylance",
@@ -62,22 +63,8 @@
   "terminal.external.osxExec": "iterm.app",
   "pdf-preview.default.sidebar": true,
   "r.bracketedPaste": true,
-  "r.alwaysUseActiveTerminal": false,
+  "r.alwaysUseActiveTerminal": true,
   "r.sessionWatcher": true,
-  "actionButtons": {
-    "defaultColor": "#ff0034", // Can also use string color names.
-    "loadNpmCommands": false, // Disables automatic generation of actions for npm commands.
-    "reloadButton": "♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
-    "commands": [
-      {
-        "cwd": "${fileDirname}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
-        "name": "Knit PDF",
-        "color": "green",
-        "singleInstance": true,
-        "command": "echo \"rmarkdown::render('${file}', 'pdf_document')\" | R --slave", // This is executed in the terminal.
-      }
-    ]
-  },
   "gitlens.menus": {
     "editor": false,
     "editorGroup": false,
@@ -106,18 +93,97 @@
   "liveServer.settings.root": "dev_build/scatter_widget",
   "files.defaultLanguage": "${activeEditorLanguage}",
   "editor.linkedEditing": true,
+  "cSpell.words": [],
   "cSpell.userWords": [
+    "datafusion",
+    "antialiasing",
+    "asis",
+    "betainc",
     "bindgen",
+    "bmatrix",
+    "bookdown",
+    "callout",
+    "Colour",
+    "Colours",
+    "detourr",
+    "dists",
+    "dplyr",
+    "fontsize",
+    "geozoo",
+    "ggobi",
+    "ggplot",
+    "gifski",
+    "gpar",
+    "hastie",
+    "htmlwidgets",
+    "interactivities",
+    "knitr",
+    "linewidth",
+    "magrittr",
+    "mathbf",
+    "mathrm",
+    "mnist",
+    "mvrnorm",
+    "ncol",
+    "newpage",
+    "pagebreak",
+    "plotly",
+    "prcomp",
+    "quosures",
+    "rmarkdown",
+    "roundrect",
+    "Rtsne",
+    "runif",
+    "scatterplot",
+    "tfjs",
+    "tibble",
+    "tidyselect",
+    "tourr",
+    "tsne",
+    "unif",
     "vals",
-    "wasm"
+    "viridis",
+    "wasm",
+    "XNNPACK"
   ],
-  "cSpell.enabled": false,
+  "cSpell.enabled": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "rust-analyzer.inlayHints.enable": false,
   "explorer.confirmDelete": false,
   "zenMode.hideTabs": false,
+  "editor.inlineSuggest.enabled": true,
+  "cSpell.language": "en,en-GB",
+  "cSpell.ignoreWords": [
+    "palmerpenguins"
+  ],
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.guides.bracketPairs": true,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "rust-analyzer.highlightRelated.exitPoints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "editor.inlayHints.fontSize": 10,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  //"editor.lineNumbers": "relative",
+  "workbench.colorCustomizations": {
+    // Name of the theme you are currently using
+    "[Gruvbox Dark Hard]": {
+      "editorInlayHint.foreground": "#868686f0",
+      "editorInlayHint.background": "#22222248",
+      // Overrides for specific kinds of inlay hints
+      "editorInlayHint.typeForeground": "#fdb6fdf0",
+      "editorInlayHint.parameterForeground": "#fdb6fdf0",
+    }
+  },
+  "window.zoomLevel": 1,
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  }
 }
